@@ -1,4 +1,4 @@
-import { faAngleDoubleLeft, faAngleDoubleRight, faCheckCircle, faDashboard, faUser, faUserShield, IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleLeft, faAngleDoubleRight, faDashboard, faList, faUser, faUserShield, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ interface MenuItem {
 const Sidebar = () => {
     const [isExpanded, setIsExpanded] = useState<boolean>(true);
     const [menuItems] = useState<MenuItem[]>([
-        { id: 2, name: "Category Management", icon: faCheckCircle, link: "/admin/category" },
+        { id: 2, name: "Category Management", icon: faList, link: "/admin/category" },
         { id: 3, name: "User Management", icon: faUser, link: "/admin/user" },
         { id: 4, name: "Role Management", icon: faUserShield, link: "/admin/role" }
     ]);
