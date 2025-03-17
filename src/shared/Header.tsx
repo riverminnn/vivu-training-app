@@ -17,7 +17,7 @@ const Header = () => {
                 </Link>
                 <div className='flex justify-center items-center *:block *:p-5 *:hover:bg-[#33adff] *:hover:text-white'>
                     <NavLink to="/" className={({ isActive }: { isActive: boolean }) => `${isActive ? "bg-blue-500 text-white" : ""}`}>Home</NavLink>
-                    <NavLink to="/dashboard" className={({ isActive }: { isActive: boolean }) => `${isActive ? "bg-blue-500 text-white" : ""}`}>Dashboard</NavLink>
+                    <NavLink to="/admin/dashboard" className={({ isActive }: { isActive: boolean }) => `${isActive ? "bg-blue-500 text-white" : ""}`}>Dashboard</NavLink>
                     <NavLink to="/about" className={({ isActive }: { isActive: boolean }) => `${isActive ? "bg-blue-500 text-white" : ""}`}>About</NavLink>
                     <NavLink to="/contact" className={({ isActive }: { isActive: boolean }) => `${isActive ? "bg-blue-500 text-white" : ""}`}>Contact</NavLink>
                 </div>

@@ -54,7 +54,7 @@ const Dashboard = () => {
                                 <td>
                                     <div className="action flex gap-2">
                                         <button className="text-blue-500  cursor-pointer" type="button" title="edit"><FontAwesomeIcon icon={faEdit} /></button>
-                                        <button className="text-red-500  cursor-pointer" type="button" title="edit"><FontAwesomeIcon icon={faTrashCan} /></button>
+                                        <button className="text-red-500  cursor-pointer" type="button" title="delete"><FontAwesomeIcon icon={faTrashCan} /></button>
                                     </div>
                                 </td>
                             </tr>
@@ -65,7 +65,7 @@ const Dashboard = () => {
                                 <td>
                                     <div className="action flex gap-2">
                                         <button className="text-blue-500  cursor-pointer" type="button" title="edit"><FontAwesomeIcon icon={faEdit} /></button>
-                                        <button className="text-red-500  cursor-pointer" type="button" title="edit"><FontAwesomeIcon icon={faTrashCan} /></button>
+                                        <button className="text-red-500  cursor-pointer" type="button" title="delete"><FontAwesomeIcon icon={faTrashCan} /></button>
                                     </div>
                                 </td>
                             </tr>
@@ -76,7 +76,7 @@ const Dashboard = () => {
                                 <td>
                                     <div className="action flex gap-2">
                                         <button className="text-blue-500  cursor-pointer" type="button" title="edit"><FontAwesomeIcon icon={faEdit} /></button>
-                                        <button className="text-red-500  cursor-pointer" type="button" title="edit"><FontAwesomeIcon icon={faTrashCan} /></button>
+                                        <button className="text-red-500  cursor-pointer" type="button" title="delete"><FontAwesomeIcon icon={faTrashCan} /></button>
                                     </div>
                                 </td>
                             </tr>
