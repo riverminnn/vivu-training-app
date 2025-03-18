@@ -5,10 +5,11 @@ import { deleteCategory } from "../../../api/category.service";
 
 type CategoryItemProps = {
     category: ICategory,
-    onGetCategories: () => void
+    onGetCategories: () => void,
+    onUpdateCategory: () => void,
 }
 
-const CategoryItem = ({ category, onGetCategories }: CategoryItemProps) => {
+const CategoryItem = ({ category, onGetCategories, onUpdateCategory }: CategoryItemProps) => {
     const onDeleteCategory = async (id?: number) => {
         if (confirm('Are you sure you want to delete this category?')) {
             if (id) {
@@ -23,7 +24,7 @@ const CategoryItem = ({ category, onGetCategories }: CategoryItemProps) => {
             <td>{category.name}</td>
             <td className="">
                 <div className="flex gap-2">
-                    <button className="text-blue-500 cursor-pointer" type="button"
+                    <button className="text-blue-500 cursor-pointer" type="button" onClick={() => onUpdateCategory()}
                         title="edit">
                         <FontAwesomeIcon icon={faEdit} />
                     </button>
