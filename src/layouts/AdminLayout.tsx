@@ -12,7 +12,6 @@ const Layout = ({ children }: { children: ReactNode }) => (
                 <div className="content ">
                     {children}
                 </div>
-
                 <Footer />
             </div>
         </main>
